@@ -1,0 +1,29 @@
+.paragraph {
+    width: 100%;
+}
+
+.paragraph h1 {
+    text-align: center;
+}
+
+.paragraph div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.paragraph div img {
+    width: 20%;
+    clip-path: circle();
+}
+
+.paragraph div div{
+    display: block;
+    text-justify: auto;
+    text-align: center;
+    width: 50%;
+}
