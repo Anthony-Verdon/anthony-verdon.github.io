@@ -1,7 +1,7 @@
 footer {
     background-color:black;
     color:white;
-    position:flex;
+    position:fixed;
     width:100%;
     bottom: 0;
 }
@@ -17,7 +17,8 @@ footer #informations {
 }
 
 footer #informations #links{
-    width: 10%;
+    width: 261px;
+    text-align: center;
 }
 
 footer #github-logo {
@@ -25,5 +26,5 @@ footer #github-logo {
 }
 
 footer #linkedIn-logo {
-    width:19%;
+    width:20%;
 }
