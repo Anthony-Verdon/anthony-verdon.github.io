@@ -30,8 +30,14 @@ body {
 
 }
 
-.paragraph div img {
+#profile-picture {
     width: 20%;
+    clip-path: circle();
+}
+
+
+#photomontage {
+    width: 35%;
     clip-path: circle();
 }
 
