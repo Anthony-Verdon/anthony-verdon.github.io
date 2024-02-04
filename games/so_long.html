@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WIP</title>
+    </head>
+    <body>
+    <header>
+        <div></div>
+        <h1 >Anthony Verdon - Portfolio</h1>
+        <nav>
+            <a href="../index.html" >Page principale</a>
+            <a href="../about.html" >A propos</a>
+            <a href="game.html">Mes projets</a>
+        </nav>
+    </header>
+        <img id="background" src="../images/background-temporary.jpg" alt="background image">
+        <br><br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>So_long est un projet faisant partie des 3 premiers projets graphiques de l'école 42, dont le but est d'apprendre à utiliser une librairie graphique (la miniLibX ou une de ses dérivés, ressemblant à SDL2) pour créer un projet 2D. Dans So_Long, le but est de créer un jeu vidéo où le joueur devra ramasser tous les objets d'un niveau avant de se diriger vers la sortie.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="example of a so long from subject" src="../images/so_long/subject_example.png">
+            <p>un exemple donné avec le sujet du projet</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Personnellement, je suis parti sur aspect de donjon, où le joueur incarne un chevalier qui doit ramasser tous les coffres en évitant les ennemis puis se diriger vers l'échelle qui apparaît lorsque tous les coffres ont été ramassé.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="tileset from so_long" src="">
+            <p>Le tileset que j'ai décidé d'utiliser</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Le programme, développé en C, se lance avec comme paramètre un fichier .ber, extension créée pour se projet. Ce fichier contient les informations du niveau, tel que les espaces vides (0) ou le joueur peut se déplacer, les murs (1) qui empêchent le joueur d'avancer, les objets (?) que le joueur doit ramasser, la sortie (E) qui permet de finir le niveau, et les monstres (M) qui peuvent tuer le joueur. Ainsi, avant que le jeu ne commence, il faut effectuer une vérification sur ce fichier pour s'assurer qu'il soit conforme à certaines règles, comme le fait de pouvoir finir le niveau, ou bien que la carte soit un rectangle ne comportant que les caractères ASCII cités précédemment.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt=".ber file example" src="">
+            <p>exemple d'un fichier de lancement contenant une carte de 10 par 10</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ensuite, le jeu peut commencer. Le gameplay est très simple car la seule action que le joueur peut faire est de se déplacer en appuyant sur les touches WASD. En effet, les projets 42 ont ce défaut qui est qu'ils se concentrent plus sur le rendu que sur le gameplay (problème qu'on retrouve dans Cub3D, un autre projet 42, et aussi un peu dans Doom-Nukem ou le rendu reste très important).</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif of the player moving" src="">
+            <p>Les seules actions que peut faire le joueur</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Pour aller dans ce sens, j'ai décidé de me concentrer sur le rendu en faisant les bonus du projet (les projets 42 sont séparés en 2: une partie obligatoire et une partie bonus) mais aussi personnels. Par exemple, j'ai ajouté une animation sur les monstres et sur le chevalier. J'ai aussi fait en sorte que les murs forment une pièce fermée et que dans le cas où certains se retrouvent au milieu de la pièce, ils soient représentés par des caisses. Enfin, ce qui a pu être le plus compliqué mais auquel je tenais à été de gérer les cartes trop grandes pour la largeur de l'écran. Pour cela, j'ai découpé la carte initiale en sous-carte de 10 par 10, et le joueur peut naviguer entre les différentes.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif of the player animation and the monster animation" src="">
+            <p>animations du joueur et des monstres</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="a map in game" src="">
+            <p>une carte de 10 par 10 en jeu</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="a gif showing the slicing of a big map" src="">
+            <p>Une grande carte est découpée en plus petite carte</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce projet, bien que très simple, est important pour moi car il est réellement mon premier jeu vidéo, et j'ai beaucoup aimé travaillé dessus.<br><br><a href="https://github.com/AnthonyVerdon-42Projects/so_long">lien github</a></p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br><br>
+    <footer>
+        <br>
+        <h1>Contact</h1>
+        <div id="informations">
+            <p>email: averdon@student.42angouleme.fr</p>
+            <div id="links">
+                <div>
+                    <a href="https://github.com/Anthony-Verdon/">
+                        <img id="github-logo" src="../images/github-mark-white.png" alt="github logo white version">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anthony-verdon-3867bb286/">
+                        <img id="linkedIn-logo" src="../images/LinkedIn-White.png" alt="linkedIn logo white version">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </footer> 
+
+    <link rel="stylesheet" type="text/css" href="../style/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/array.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
+    </body>
+</html>
