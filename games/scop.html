@@ -17,16 +17,112 @@
         <br><br><br>
         <div class="paragraph">
             <br>
-            <h1 >WIP</h1>
             <div>
-                <img src="" alt="screen from the game">
                 <div>
-                    <p>WIP</p>
+                    <p>Scop est un projet simple dans le principe, mais bien plus complexe en réalité. Le but: afficher un objet en 3D via une API Graphique type OpenGL.</p>
                 </div>
             </div>
-            <br><br><br>
+            <br>
         </div>
-    <br><br><br>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screenshot from Scop" src="">
+            <p>images provenant de mon programme</p>
+        </div>
+        <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Pour expliquer globalement, API signifie "application programming interface", ou interface de programmation d'application. Dans le cas d'OpenGL, que j'ai utilisé pour ce projet, cela me permet de lui déclarer des formes géométriques via des sommets, puis d'appliquer une rotation si je le souhaite, et OpenGL se charge de faire les calculs et d'afficher à l'écran ce que je lui ai demandé.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif showing rotation of my a teapot" src="">
+            <p>images provenant de mon programme</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>OpenGL peut se charger de dessiner différentes formes, mais la plus avantageuse est le triangle, car chaque forme géométrique peut être découpé en triangle, ce qui permet de faire un seul programme. Ainsi, bien que ce que l'on voit ici ou dans les jeux vidéo n'aient pas une forme de triangle, ils en sont composés.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screen showing all the triangles forming the teapot" src="">
+            <p>le même objet mais où l'on voit tous les triangles</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce programme est développé en C++, et prend en paramètre un .obj qui est souvent accompagné d'un .mtl. Un .obj peut contenir énormément d'informations mais voici les principales: </p>
+                    <table>
+                        <tr>
+                            <th>symbole</th>
+                            <th>signification</th>
+                            <th>définition</th>
+                        </tr>
+                        <tr>
+                            <td>v</td>
+                            <td>vertice</td>
+                            <td>un point, un sommet</td>
+                        </tr>
+                        <tr>
+                            <td>f</td>
+                            <td>face</td>
+                            <td>une face formée de multiples sommets</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td>object</td>
+                            <td>ce qui permet de donner un nom à l'objet</td>
+                        </tr>
+                        <tr>
+                            <td>vt</td>
+                            <td>vertice texture</td>
+                            <td>un point, un sommet de la texture</td>
+                        </tr>
+                        <tr>
+                            <td>mtllib</td>
+                            <td>material librarie</td>
+                            <td>lien vers un fichier .mtl pour utiliser ce qu'il contient</td>
+                        </tr>
+                        <tr>
+                            <td>usemtl</td>
+                            <td>use material</td>
+                            <td>définit qu'un objet utilise un material</td>
+                        </tr>
+                    </table>
+                    <p>bien sûr il en existe énormément d'autres, mais c'est celles que j'ai utilisé dans mon programme.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="example of .obj file" src="">
+            <p>exemple d'un fichier .obj</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce projet, bien que très compliqué au final, était très intéressant car permet de comprendre en partie comment fonctionne les moteurs de jeux.<br><br><a href="">lien github</a></p>
+                </div>
+            </div>
+            <br>
+        </div>
+<br><br><br>
     <footer>
         <br>
         <h1>Contact</h1>
