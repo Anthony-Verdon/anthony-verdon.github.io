@@ -3,9 +3,13 @@
     left: 10%;
     position:relative;
     text-align: center;
-    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
 }
 
+.descriptive-picture p {
+    font-style: italic;
+}
 .descriptive-picture img {
     width: 50%;
 }
