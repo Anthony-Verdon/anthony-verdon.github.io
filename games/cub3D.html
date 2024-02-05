@@ -17,16 +17,73 @@
         <br><br><br>
         <div class="paragraph">
             <br>
-            <h1 >WIP</h1>
             <div>
-                <img src="" alt="screen from the game">
                 <div>
-                    <p>WIP</p>
+                    <p>Cub3D est le second projet graphique de l'école 42. Le but cette fois est d'implémenter un algorithme de raycasting pour faire un rendu 3D d'une carte en 2D, comme dans Wolfenstein3D. Pour ce projet, j'étais accompagne de Nathan Locussol, un autre élève de 42 <a href="">(linkedIn)</a></p>
                 </div>
             </div>
-            <br><br><br>
+            <br>
         </div>
-    <br><br><br>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screenshot from Wolfenstein3D" src="">
+            <p>image du jeu Wolfenstein3D</p>
+        </div>
+        <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Le principe du raycasting est assez simple: un rayon va être envoyé depuis la position du joueur jusqu'à ce qu'il croise un mur. En fonction de la distance parcourue, on affichera plus ou moins loin le mur. On répètera cette opération pour chaque colonne de pixels de notre fenêtre. Malgré tout, la simplicité de cette algorithme créée certaines limitations. Par exemple, les niveaux sont obligatoirement composés d'un seul étage, avec des pièces rectangulaires et avec des murs épais.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+        <div class="descriptive-picture">
+            <img alt="screen showing the advancement of the ray casted until he collide to a wall" src="">
+            <p>explication simple du raycast. En vert, le joueur; en rouge le rayon; les cases blanches sont des espaces vides et les cases bleues des murs</p>
+        </div>
+        <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Le programme, développé en C, se lance avec comme paramètre un fichier .cub, contenant les textures de chaque orientation de mur (Nord, Sud, Est, Ouest), la couleur du sol et du plafond et bien sûr, la carte composé de 0 (espace vide) et de 1 (mur) ainsi que la position du joueur.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+        <div class="descriptive-picture">
+            <img alt="example of a .cub file" src="">
+            <p>exemple de fichier .cub classique</p>
+        </div>
+        <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Comme pour So_long, 42 se focalise principalement sur le rendu plutôt que sur le gameplay dans ce genre de projets. C'est pourquoi encore une fois, le joueur peut seulement se déplacer, et, dans la partie obligatoire, il n'y a même pas de collisions à gérer. Nous avons donc décidé de pousser le projet plus loin en faisant d'abord les bonus proposés, comme les collisions, une minimap ou encore une porte, mais aussi nos propres bonus. Vous pouvez donc par exemple taggez les murs et les effacer, il vous faut une carte pour ouvrir une porte et vous pouvez jouer à la gameboy, ce qui lance mon so long.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+        <div class="descriptive-picture">
+            <img alt="screenshot from our cub3D showing the inventory bar" src="">
+            <p>la barre d'inventaire montre toutes les actions possibles</p>
+        </div>
+        <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Ce projet très sympathique m'aura permis de comprendre comment fonctionnait les prémices de la 3D. D'autres projets comme Doom Nukem ou Scop iront aussi dans ce sens.<br><br><a href="">lien github</a></p>
+            </div>
+        </div>
+        <br>
+    </div>
     <footer>
         <br>
         <h1>Contact</h1>
@@ -50,6 +107,7 @@
     <link rel="stylesheet" type="text/css" href="../style/header.css" />
     <link rel="stylesheet" type="text/css" href="../style/footer.css" />
     <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
     <link rel="stylesheet" type="text/css" href="../style/array.css" />
     </body>
 </html>
