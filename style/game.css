@@ -2,3 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
+table tr td img {
+    width: 100%;
+}
