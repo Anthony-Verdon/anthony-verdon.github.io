@@ -1,19 +1,88 @@
 body {
+    font-family: "Roboto Slab";
     margin: 0;
     padding: 0;
 }
 
-#background {
+.background {
+    width:100%;
+    position:relative;
+    margin: 0;
+    padding: 0;
+}
+
+.background img {
     width:100%;
 }
 
-#profile-picture {
-    width: 20%;
-    clip-path: circle();
+.background div {
+    border-radius: 15%;
+    padding: 20px;
+    position:absolute;
+    left:45%;
+    top: 35%;
+    border: solid black; 
+    background-color: white;
 }
 
+.background div:hover {
+    background-color: black;
+}
 
-#photomontage {
-    width: 35%;
+.background div a {
+    text-decoration: none;
+    color:black;
+}
+
+.background div:hover a{
+    color: white;
+}
+
+.about-me {
+    margin: 0;
+    width : 100%;
+    background-color: black;
+    text-align: center;
+    display:flex;
+}
+
+.about-me img {
+    position: relative;
+    width: 20%;
     clip-path: circle();
+    margin: 20px;
+    left: 5%;
+}
+.about-me div {
+    position: relative;
+    width: 60%;
+    left: 7.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-me div p, .about-me div h1{
+    color:white;
+    text-justify: auto;
+}
+
+.all-projects {
+    position:relative;
+    width: 100%;
+}
+
+.all-projects .group-of-projects {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-projects .group-of-projects a {
+    text-decoration: none;
+    color:black;
+    margin: 20px 50px;
+    width: 15%;
+}
+
+.all-projects .group-of-projects a:hover {
+    width: 20%;
 }
