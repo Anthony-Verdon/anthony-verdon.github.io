@@ -56,7 +56,12 @@ body {
     left:20%;
 }
 
+h1 {
+    text-decoration: underline;
+
+}
 .all-projects {
+    text-align: center;
     position:relative;
     width: 100%;
 }
