@@ -8,7 +8,7 @@
 
 .paragraph h1 {
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "Roboto Slab";
 }
 
 .paragraph div {
@@ -25,16 +25,13 @@
     text-justify: auto;
     text-align: center;
     width: 75%;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "Roboto Slab";
+}
+
+.paragraph div div img{
+    width: 5%;
 }
 
 .paragraph a{  
     color: black;
-}
-
-.paragraph table {
-    margin-left:auto;
-    margin-right:auto;
-    width: 70%;
-    text-align: center;
 }
