@@ -43,27 +43,17 @@ body {
     width : 100%;
     background-color: black;
     position:relative;
-    display:flex;
     align-items:center;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
-}
-
-.about-me img {
-    width: 20%;
-    clip-path: circle();
-    left: 10%;
-    position:relative;
-}
-.about-me div {
-    width: 60%;
-    left: 10%;
-    position:relative;
-}
-
-.about-me div p, .about-me div h1{
     color:white;
     text-align: center;
+}
+
+.about-me div {
+    width: 60%;
+    position:relative;
+    left:20%;
 }
 
 .all-projects {
