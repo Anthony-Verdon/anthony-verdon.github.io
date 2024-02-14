@@ -39,30 +39,31 @@ body {
 }
 
 .about-me {
-    margin: 0;
     width : 100%;
     background-color: black;
-    text-align: center;
+    position:relative;
     display:flex;
+    align-items:center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-me img {
-    position: relative;
     width: 20%;
     clip-path: circle();
-    margin: 20px;
-    left: 5%;
+    left: 10%;
+    position:relative;
 }
 .about-me div {
-    position: relative;
     width: 60%;
-    left: 7.5%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    left: 10%;
+    position:relative;
 }
+
 .about-me div p, .about-me div h1{
     color:white;
-    text-justify: auto;
+    text-justify: inter-character;
+    text-align: center;
 }
 
 .all-projects {
