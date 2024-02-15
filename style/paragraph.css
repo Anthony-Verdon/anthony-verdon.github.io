@@ -1,9 +1,7 @@
 .paragraph {
     background-color: #dddddd;
-    width: 80%;
-    left: 10%;
+    width: 100%;
     position:relative;
-    border-radius: 25%;
 }
 
 .paragraph h1 {
@@ -24,7 +22,7 @@
     display: block;
     text-justify: auto;
     text-align: center;
-    width: 75%;
+    width: 50%;
     font-family: "Roboto Slab";
 }
 

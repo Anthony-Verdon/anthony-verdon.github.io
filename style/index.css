@@ -4,49 +4,14 @@ body {
     padding: 0;
 }
 
-.background {
-    width:100%;
-    position:relative;
-    background-color: black;
-}
-
-.background img {
-    width: 100%;
-}
-
-.background div {
-    border-radius: 15%;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: solid black; 
-    background-color: white;
-    text-align: center;
-}
-
-.background div:hover {
-    background-color: black;
-}
-
-.background div a {
-    text-decoration: none;
-    color:black;
-}
-
-.background div:hover a{
-    color: white;
-}
-
 .about-me {
     width : 100%;
-    background-color: black;
+    background-color: white;
     position:relative;
     align-items:center;
     padding-top: 10px;
     padding-bottom: 50px;
-    color:white;
+    color:black;
     text-align: center;
 }
 
@@ -56,14 +21,12 @@ body {
     left:20%;
 }
 
-h1 {
-    text-decoration: underline;
-
-}
 .all-projects {
     text-align: center;
     position:relative;
     width: 100%;
+    background-color: #222;
+    color: white;
 }
 
 .all-projects .group-of-projects {
@@ -76,9 +39,9 @@ h1 {
     text-decoration: none;
     color:black;
     margin: 20px 50px;
-    width: 15%;
+    width: 20%;
 }
 
-.all-projects .group-of-projects a:hover {
-    width: 20%;
+.all-projects .group-of-projects a:hover .panel {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
