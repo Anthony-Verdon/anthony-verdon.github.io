@@ -34,7 +34,13 @@
     color: black;
 }
 
-.paragraph table,.paragraph th,.paragraph td {
+.paragraph div div table {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.paragraph  div div table, .paragraph  div div th, .paragraph  div div td {
     border: solid black; 
     border-collapse: collapse;
 }
