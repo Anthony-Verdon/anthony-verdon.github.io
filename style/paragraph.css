@@ -33,3 +33,12 @@
 .paragraph a{  
     color: black;
 }
+
+.paragraph table,.paragraph th,.paragraph td {
+    border: solid black; 
+    border-collapse: collapse;
+}
+
+.paragraph th,.paragraph td {
+    padding: 10px;
+}
