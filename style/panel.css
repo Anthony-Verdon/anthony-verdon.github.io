@@ -1,50 +1,84 @@
-.panel {
-  position:relative;
+.project-panel {
+  position: relative;
   width: 100%;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.panel img {
+.project-panel img {
   width: 100%;
 }
 
-.panel img.front {
-  opacity:1;
+.project-panel img.front {
+  opacity: 1;
 }
 
-.panel:hover img.front {
-  opacity:0;
+.project-panel:hover img.front {
+  opacity: 0;
 }
 
-.panel img.back {
-  position:absolute;
-  opacity:0;
+.project-panel img.back {
+  position: absolute;
+  opacity: 0;
 }
 
-.panel:hover img.back {
-  opacity:1;
+.project-panel:hover img.back {
+  opacity: 1;
 }
 
-.panel h1{
+.project-panel h1 {
   font-size: 2vw;
   padding-left: 5px;
   margin: 0;
 }
 
-.panel h2{
+.project-panel h2 {
   font-size: 1.5vw;
   padding-left: 5px;
   margin: 0;
   padding-bottom: 5px;
 }
 
-.panel div{
+.project-panel div {
   display: flex;
   justify-content: space-around;
   margin: auto;
   padding-bottom: 5px;
 }
 
-.panel div img {
-  width:15%;
+.project-panel div img {
+  width: 15%;
+}
+
+.experience-panel {
+  position: relative;
+  width: 20%;
+  text-align: left;
+  color: black;
+  margin: 20px 50px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.experience-panel .studio {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(100, 100, 100);
+  text-decoration: underline;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.experience-panel span {
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 5px;
+
+}
+
+.experience-panel .missions {
+  width: 90%;
+  position: relative;
+  padding-left: 5px;
+  left: 5%;
 }

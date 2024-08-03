@@ -5,8 +5,8 @@ body {
 }
 
 .background {
-    width:100%;
-    position:relative;
+    width: 100%;
+    position: relative;
     background-color: black;
 }
 
@@ -21,7 +21,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid black; 
+    border: solid black;
     background-color: white;
     text-align: center;
 }
@@ -32,49 +32,67 @@ body {
 
 .background div a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.background div:hover a{
+.background div:hover a {
     color: white;
 }
 
 .about-me {
-    width : 100%;
+    width: 100%;
     background-color: black;
-    position:relative;
-    align-items:center;
+    position: relative;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 50px;
-    color:white;
+    color: white;
     text-align: center;
 }
 
 .about-me div {
     width: 60%;
-    position:relative;
-    left:20%;
+    position: relative;
+    left: 20%;
 }
 
 h1 {
     text-decoration: underline;
 
 }
+
+.all-experiences {
+    width: 100%;
+    background-color: grey;
+    position: relative;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+
+.all-experiences .group-of-experiences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .all-projects {
     text-align: center;
-    position:relative;
+    position: relative;
     width: 100%;
 }
 
 .all-projects .group-of-projects {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .all-projects .group-of-projects a {
     text-decoration: none;
-    color:black;
+    color: black;
     margin: 20px 50px;
     width: 15%;
 }
