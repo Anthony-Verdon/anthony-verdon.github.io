@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anthony Verdon - Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><h1 >Anthony Verdon - Portfolio</h1></a>
+        </header>
+        <br><br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Dungeon Generator est un projet personnel dont le but est d'implémenter le Wave Function Collapse Algorithm (WFC). Le WFC est un algorithme permettantt la création de cartes en 2D grâce à la définition d'un tileset ainsi que de règles définissant quelles tiles peuvent être à côte à côte.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="example of map" src="../images/dungeonGenerator/mapExample.png">
+            <p>exemple de carte générée via le Wave Function Collapse Algorithm</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Pour expliquer le principe du WFC, nous commençons avec une carte vide où chaque case peut contenir n'importe quelle tile. Nous prenons ensuite une case au hasard, et définissons une tile. Le fait que cette tile soit maintenant défini va changer les probabilités autour de cette dernière. Ensuite, nous répétons l'opération de définition de tile parmis les cases avec le moins de possibilités, et ainsi de suite jusqu'à ce que la carte entière soit remplie.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="step 0 of the algorithm" src="../images/dungeonGenerator/step0.png">
+            <p>au début il n'y a aucune tile défini</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="step 1 of the algorithm" src="../images/dungeonGenerator/step1.png">
+            <p>quand on défini une tile, celles aux alentours sont mis à jour. On recommence à l'étape précédente parmis les tiles avec le moins de possibilités.</p>
+        </div>
+        <br><br>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="post update example" src="../images/dungeonGenerator/steps.png">
+            <p>autre exemple d'une update après définition</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Une façon d'améliorer cette algorithme est d'ajouter un poids à chaque tile. Ainsi, on peut modifier les probabilités d'une tile d'apparaître, créant des cartes avec un même tileset mais avec des résultats très variées. Je ne l'ai personnellement pas implémenté, mais j'envisage de le faire à l'avenir.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="water map" src="../images/dungeonGenerator/moreWater.png">
+            <p>une map avec principalement de l'eau</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="plains map" src="../images/dungeonGenerator/morePlains.png">
+            <p>une map avec principalement des plaines</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="forest map" src="../images/dungeonGenerator/moreForest.png">
+            <p>une map avec principalement des forêts</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Afin de rendre mon programme plus simple d'utilisation, je me suis essayé à la création d'un User Interface avec Gtkmm, la version C++ de Gtk. J'ai réalisé quelque chose de très simple avec 3 boutons, servant respectivement à générer une map, choisir une fichier de configuration (les règles pour l'algorithme), et enfin pouvoir sauvegarder la map. Il est améliorable au niveau de l'esthétique, et certaines options sont rajoutables comme par exemple le choix de la taille de la carte (20x20 obligatoire).</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screen of the UI" src="../images/dungeonGenerator/UI.png">
+            <p>UI du programme</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Cet algorithme est très intéressant car assez flexible, permettant la création de monde en vue top down ou bien de profil, et rapidement implémentable d'en d'autres projets. Je pense pouvoir le réutiliser plus tard sans problème.</p>
+                    <p>Pour comprendre l'algorithme et illustrer cette page, je me suis servi de cette <a href="https://www.youtube.com/watch?v=qRtrj6Pua2A">vidéo</a> ainsi que de cette <a href="https://www.boristhebrave.com/2020/04/13/wave-function-collapse-explained/">article</a>.</p>
+                    <a href="https://github.com/AnthonyVerdon-PersonalProjects/dungeonGenerator"><img src="../images/icons/github-mark-black.png" alt="github logo black version"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <footer>
+            <br>
+            <h1>Contact</h1>
+            <p>email: averdon@student.42angouleme.fr</p>
+                <div class="links">
+                    <div>
+                        <a href="https://github.com/Anthony-Verdon/">
+                            <img src="../images/icons/github-mark-white.png" alt="github logo white version">
+                        </a>
+                        <a href="https://www.linkedin.com/in/anthony-verdon-3867bb286/">
+                            <img src="../images/icons/LinkedIn-White.png" alt="linkedIn logo white version">
+                        </a>
+                        <a href="https://nordev.itch.io/">
+                            <img src="../images\icons\itchio-icon.png" alt="itchio logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </footer> 
+
+    <link rel="stylesheet" type="text/css" href="../style/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </body>
+</html>

@@ -1,3 +1,3 @@
 # anthony-verdon.github.io
 
-WIP
+Portfolio presenting my experiences and projects

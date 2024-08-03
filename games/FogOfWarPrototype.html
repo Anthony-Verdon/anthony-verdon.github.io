@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anthony Verdon - Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><h1 >Anthony Verdon - Portfolio</h1></a>
+        </header>
+        <br><br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce prototype à été réalisé durant une gamejam où le thème était "You shouldn't be here". J'ai profité de ce thème afin de créer un jeu d'infiltration où la principale caractéristique est un champ de vision limité, qui se réduit lorsque le personnage se cache.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif showing the fov decreasing" src="../images/fogOfWar/fov-decrease.gif">
+            <p>gif montrant le FOV se réduire</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ma principale inspiration a été le jeu Among Us. Je voulais avoir un résultat similaire à la vision que le joueur possède dans ce jeu.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screen from among us" src="../images/fogOfWar/AmongUs.png">
+            <p>résultat voulue</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Comme toutes mes gamejams, je la réalise sur un moteur de jeu, ici Unity. Je suis assez chanceux car Among Us a été réalisé sur ce moteur aussi. La documentation a donc été assez simple à trouver, et j'ai simplement eu à suivre cette <a href="https://www.youtube.com/watch?v=CSeUMTaNFYk">vidéo</a> de Code Monkey.</p>
+                    <p>Pour expliquer rapidement comment cela fonctionne, le jeu va être séparé en 3 layers: la vision du joueur, les éléments bloquant la vision du joueur et les éléments révélés par la vision du joueur. Ainsi, un masque est appliqué sur tout l'écran, cachant les éléments, et le FOV du joueur va le désactiver permettant de révéler les élements du jeu.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif of the game where the player reveal an enemy" src="../images/fogOfWar/reveal-enemy.gif">
+            <p>gif du jeu où le joueur révèle un élément</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Pour l'aspect technique du FOV, celui-ci est réalisé grâce à du raycast et des mesh. Le but va d'être d'envoyer pleins de rayons, qui s'arrêteront soit à un élément bloquant comme un mur, soit à la limite fixée. Nous relierons ensuite 2 extrémités de rayons et le joueur créant ainsi un triangle, ou mesh.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="screens comparing the result and the wireframe mode" src="">
+            <p>comparaison entre le résultat et la forme du FOV composé de triangles</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Lors de cette gamejam, ce FOV a été ma principale préoccupation. Je me suis occupé rapidement de créeer une forme de gameplay avec les sous-thèmes proposé: "fast paced" et "banana". Le joueur incarne donc un singe cherchant à retrouver une fabuleuse banane protégé par des rhinocéros, puis à se diriger vers la sortie.</p>
+                    <p>Ce gameplay très rudimentaire est la raison pour laquelle je préfère dire que c'est un prototype.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+            <img alt="gif of gameplay" src="../images/fogOfWar/gameplay.gif">
+            <p>entrevue rapide du gameplay</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce projet m'aura permis de découvrir encore de nouvelles choses sur Unity et m'a donné plusieurs idées pour de futurs projets.</p>
+                    <a href="https://github.com/AnthonyVerdon-PersonalProjects/chillDevJam6"><img src="../images/icons/github-mark-black.png" alt="github logo black version"></a><a href="https://nordev.itch.io/quest-of-the-fabulous-banana"><img src="../images/icons/itchio-icon.png" alt="itchio logo"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+    <footer>
+        <br>
+        <h1>Contact</h1>
+        <p>email: averdon@student.42angouleme.fr</p>
+            <div class="links">
+                <div>
+                    <a href="https://github.com/Anthony-Verdon/">
+                        <img src="../images/icons/github-mark-white.png" alt="github logo white version">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anthony-verdon-3867bb286/">
+                        <img src="../images/icons/LinkedIn-White.png" alt="linkedIn logo white version">
+                    </a>
+                    <a href="https://nordev.itch.io/">
+                        <img src="../images\icons\itchio-icon.png" alt="itchio logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </footer> 
+
+    <link rel="stylesheet" type="text/css" href="../style/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </body>
+</html>
