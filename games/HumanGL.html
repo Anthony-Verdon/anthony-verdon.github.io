@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anthony Verdon - Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><h1 >Anthony Verdon - Portfolio</h1></a>
+        </header>
+        <br><br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>Ce projet fait partie des spécialités de l'école 42, dans le branche "Graphique et Jeu vidéo". Le but est d'afficher un modèle 3D animé grâce à un skelette.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <div class="paragraph">
+          <br>
+          <div>
+              <div>
+                  <p>Un squelette 3D suit la même logique qu'un squelette humain. On y retrouve des nodes qui sont liés les unes aux autres via une architecture d'arbre, et qu'on peut comparer à nos articulations. Certaines de ces nodes portent des mesh, la partie que l'on va afficher et qu'on peut donc comparer à notre peau.<br><br>
+                    Pour cela, je suis tout d'abord reparti de mon projet Scop. En effet, la boucle de rendu est quasiment la même, car il n'y a pas de gameplay. Cependant, je ne pouvais pas reprendre les fichiers .obj, car ces derniers ne contiennent pas de données pour définir un squelette, des animations, etc ...<br><br>
+                    J'ai donc décidé de me créer un projet de parser pour les .glb (et par conséquent les .gltf). Un .glb est un fichier binaire séparé en 2 parties: une partie contenant un .json où les clés font référence aux squelettes, images, animations, etc ... et permettent ainsi d'accéder aux données brutes dans la 2ème partie qui elle est simplement binaire et ne contient que des valeurs. J'ai donc aussi dû créer un parser de .json. Ces 2 projets ont été très intéressants, le 1er d'un point de vue informatif, car c'est comme ça que j'ai pu découvrir comment fonctionne un squelette, et le 2ème d'un point de vue algorithmique, car je n'avais jamais parse de fichiers comme des .json. <br><br>
+                    Ainsi, en ayant fini le parsing, l'affichage s'est révélé assez simple, car il m'a suffi de reprendre ce que j'avais appris avec Scop, et de gérer la logique de squelette en architecture, où le transform (qui contient la position, la rotation et l'échelle) d'une node parent est multiplié au transform de la node que l'on place, permettant ainsi de permettre à notre modèle de s'articuler de façon logique. </p>
+              </div>
+          </div>
+          <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+          <img alt="screenshot from HumanGL where we can see a model" src="../images/HumanGL/model.png">
+          <p>rendu d'un modèle 3D</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+          <br>
+          <div>
+              <div>
+                  <p>La réelle découverte a été sur la gestion des animations, car je n'en avais jamais fait en 3D. Mon expérience sur mon jeu 2D où j'avais implémenté des animations m'a tout de même aidé sur la façon de structurer mon code, avec un Animator qui stocke tous les Animation. <br><br>
+                    Dans un .glb, une animation est stockée de cette façon: un nom, des channels et des samplers.
+                    Chaque channel contient un attribut qui réfère à un sampler, et contient aussi une target qui nous donne la node et la modification du transform à appliquer, entre translation, rotation et scale.
+                    Un sampler contient des timecodes et des données, qui représentent les keyframes d'une animation, ainsi que la manière d'interpoler entre ces keyframes.
+                    Une keyframe est une position à un instant T lors d'une animation. Les possibilités d'interpolation que je gère sont STEP et LINEAR. STEP veut dire que la transformation s'applique directement lorsqu'on arrive à cette keyframe, comme une téléportation. LINEAR gère quant à lui une transformation linéaire, c'est-à-dire petit à petit pour faire un mouvement fluide.<br><br>
+                    Ainsi, j'ai pu implémenter les animations, et mon HumanGL était fonctionnel. Pour finir, j'ai simplement ajouté une interface avec ImGUI pour pouvoir voir le squelette, combiner les modèles pour ajouter par exemple des outils aux autres modèles, et pouvoir changer d'animations très facilement.<br><br>
+                    J'en ai profité pour implémenter des lumières via .glb car je ne l'avais jamais fait. J'ai donc géré les point lights, des points d'où émanent la lumière, des spot lights, des points qui envoient la lumière dans une seule direction, et enfin des directional lights, qui appliquent une lumière dans une direction peu importe la position.</p>
+              </div>
+          </div>
+          <br>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+          <video controls alt="video from HumanGL where we can see an animation">
+            <source src="../images/HumanGL/animation.mp4" type="video/mp4">
+          </video>
+          <p>rendu d'une animation d'un modèle 3D</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+          <img alt="screenshot from HumanGL where we can see a spot light" src="../images/HumanGL/spotlight.png">
+          <p>rendu d'une spot light (cyan)</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+          <img alt="screenshot from HumanGL where we can see point lights and directional light" src="../images/HumanGL/pointAndDirectionalLight.png">
+          <p>rendu des point lights (bleu et rouge) et directional light (jaune, au dessus)</p>
+        </div>
+        <br><br>
+        <div class="descriptive-picture">
+          <video controls alt="ideo from HumanGL with 2 models assembled">
+            <source src="../images/HumanGL/modelAssembled.mp4" type="video/mp4">
+          </video>
+          <p>rendu de 2 modèles assemblés</p>
+        </div>
+        <br><br>
+        <div class="paragraph">
+            <br>
+            <div>
+                <div>
+                    <p>J'ai beaucoup appris grâce à ce projet, et cela m'a aussi permis de créer mon module Engine ce qui va beaucoup m'aider pour de futures projets.</p>
+                    <a id="icons" href="https://github.com/Anthony-Verdon/HumanGL"><img src="../images/icons/github-mark-black.png" alt="github logo black version"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+<br><br><br>
+<footer>
+    <br>
+    <h1>Contact</h1>
+    <p>email: averdon@student.42angouleme.fr</p>
+        <div class="links">
+            <div>
+                <a href="https://github.com/Anthony-Verdon/">
+                    <img src="../images/icons/github-mark-white.png" alt="github logo white version">
+                </a>
+                <a href="https://www.linkedin.com/in/anthony-verdon-3867bb286/">
+                    <img src="../images/icons/LinkedIn-White.png" alt="linkedIn logo white version">
+                </a>
+                <a href="https://nordev.itch.io/">
+                    <img src="../images\icons\itchio-icon.png" alt="itchio logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</footer>
+
+    <link rel="stylesheet" type="text/css" href="../style/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </body>
+</html>
