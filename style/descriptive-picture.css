@@ -13,3 +13,7 @@
 .descriptive-picture img {
     width: 50%;
 }
+
+.descriptive-picture video {
+    width: 50%;
+}

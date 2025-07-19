@@ -20,10 +20,22 @@
 
 .paragraph div div{
     display: block;
-    text-justify: auto;
-    text-align: center;
+    text-justify: none;
+    text-align: justify;
     width: 50%;
     font-family: "Roboto Slab";
+}
+
+.paragraph div div p{
+    text-justify: none;
+    text-align: justify;
+    font-family: "Roboto Slab";
+}
+
+.paragraph div div a{
+    display: block;
+    text-justify: auto;
+    text-align: center;
 }
 
 .paragraph div div img{
