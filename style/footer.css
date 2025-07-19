@@ -1,19 +1,19 @@
 footer {
-    background-color:black;
-    color:white;
-    width:100%;
+    background-color: black;
+    color: white;
+    width: 100%;
     position: relative;
     text-align: center;
 }
 
-footer .links{
-    position:absolute;
-    display:flex;
+footer .links {
+    position: absolute;
+    display: flex;
     top: 60%;
     left: 90%;
     transform: translate(-50%, -50%);
 }
 
-footer .links div a img{
-    width: 15%;
+footer .links div a img {
+    width: 30%;
 }
