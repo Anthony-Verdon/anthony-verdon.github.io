@@ -1,75 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Anthony Verdon - Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <a href="../index.html"><h1 >Anthony Verdon - Portfolio</h1></a>
-        </header>
-        <br><br><br>
-        <div class="paragraph">
-            <br>
+
+<head>
+    <title>Anthony Verdon - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Anthony Verdon - Portfolio</h1>
+        </a>
+    </header>
+    <br><br><br>
+    <div class="paragraph">
+        <br>
+        <div>
             <div>
-                <div>
-                    <p>Ce projet fait partie des spécialités de l'école 42, dans la branche "Graphique et Jeu vidéo". Le but est de recréer le jeu Temple Run. Ce projet est encore en cours, et je vais donc décrire rapidement ce que j'ai déjà implémenté.</p>
-                </div>
+                <p>Ce projet fait partie des spécialités de l'école 42, dans la branche "Graphique et Jeu vidéo". Le but
+                    est de recréer le jeu Temple Run. Ce projet est encore en cours, et je vais donc décrire rapidement
+                    ce que j'ai déjà implémenté.</p>
             </div>
-            <br>
         </div>
-        <br><br>
-        <div class="paragraph">
-          <br>
-          <div>
-              <div>
-                  <p>Pour ce qui est de la partie graphique, je réutilise simplement mon module Engine qui contient ma gestion de fenêtre, des modèles 3D et des matrices. Je n'ai donc que la partie Gameplay à faire.<br><br>
-                    Pour le moment, j'ai créé mon joueur, avec la gestion des touches pour passer entre les animations.
-                    J'ai aussi géré la génération du terrain pour qu'elle soit infinie, avec un simple chemin pour le moment.
-                    Enfin, j'ai implémenté la librairie Jolt pour la physique 3D, et j'ai ajouté à mon module Engine. </p>
-              </div>
-          </div>
-          <br>
+        <br>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Pour ce qui est de la partie graphique, je réutilise simplement mon module Engine qui contient ma
+                    gestion de fenêtre, des modèles 3D et des matrices. Je n'ai donc que la partie Gameplay à
+                    faire.<br><br>La première chose que j'ai faite a été de créer mon joueur et ses mouvements de base,
+                    le tout sur une plateforme plate.
+                    On peut donc se déplacer de gauche à droite, sauter et rouler. Ce n'est pas encore parfait, donc je
+                    vais bientôt retravailler dessus pour donner plus de liberté.
+                </p>
+            </div>
         </div>
-        <br><br>
-        <div class="paragraph">
-          <br>
-          <div>
-              <div>
-                  <p>Ce n'est encore que le début de ce projet, mais j'ai envie de créer un jeu assez complet. Tout d'abord en complétant la partie Gameplay (meilleur création du terrain, détection lorsqu'on perd, génération de power up / pièces), ensuite en rajoutant un système de menu pour pouvoir relancer le jeu, avoir un système de progression un peu plus long. Enfin ajouter un système d'audio pour compléter le jeu. </p>
-              </div>
-          </div>
-          <br>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see the player running on a infinite platform">
+            <source src="../images/42Run/infinite_path.mp4" type="video/mp4">
+        </video>
+        <p>Initialisation du projet, avec simplement le joueur sur une plateforme infinie.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Ensuite, j'ai intégré la librairie Jolt Physic, qui s'occupe donc de la physique du monde et
+                    notamment des collisions. J'ai donc du adapté le code de mon joueur pour que les mouvement passe par
+                    ce moteur physique.</p>
+            </div>
         </div>
-        <br><br>
-        <div class="descriptive-picture">
-          <video controls alt="video from 42Run where we can see a bit of gameplay">
-            <source src="../images/42Run/gameplay.mp4" type="video/mp4">
-          </video>
-          <p>vidéo de gameplay</p>
-        </div>
-        <br><br>
-        <div class="descriptive-picture">
-          <video controls alt="video from 42Run where we can see a bit of gameplay in debug mode">
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see the debug renderer of Jolt">
             <source src="../images/42Run/gameplay_debug.mp4" type="video/mp4">
-          </video>
-          <p>vidéo de gameplay avec debug mode</p>
-        </div>
-        <br><br>
-        <div class="paragraph">
-            <br>
+        </video>
+        <p>Vidéo montrant le Debug Renderer de Jolt.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
             <div>
-                <div>
-                    <p>Je ferais des mises à jour de cette page petit à petit où lorsque le jeu sera fini. En attendant, ce projet reste intéressant car c'est le premier où je touche à du gameplay en 3D avec OpenGL.</p>
-                    <a id="icons" href="https://github.com/Anthony-Verdon/42Run"><img src="../images/icons/github-mark-black.png" alt="github logo black version"></a>
-                </div>
+                <p>Puis je me suis attaqué réellement à la génération du terrain. J'avais plusieurs idées donc j'ai
+                    procédé par étape. D'abord j'ai commencé par ajouter des virages. Pour tourner, il faut simplement
+                    se trouver sur la voie de droite ou de gauche en fonction de la direction voulue.</p>
             </div>
-            <br>
         </div>
-<br><br><br>
-<footer>
-    <br>
-    <h1>Contact</h1>
-    <p>email: averdon@student.42angouleme.fr</p>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see turns">
+            <source src="../images/42Run/turns.mp4" type="video/mp4">
+        </video>
+        <p>Ajout des virages.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Ensuite, j'ai ajouté différents étages. J'ai fait en sorte qu'il y en ait 3 pour que le joueur puisse
+                    vraiment choisir le chemin qu'il souhaite.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see differents levels">
+            <source src="../images/42Run/levels.mp4" type="video/mp4">
+        </video>
+        <p>Ajout des différents niveaux.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Enfin, j'ai ajouté les obstacles. J'ai décidé d'en intégrer 3: des barrières, des portes et des
+                    piques. Les barrières nécessitent que le joueur saute par dessus. Les portes empêchent le joueur de
+                    sauter, et doit aussi rouler en dessous si elles sont de petites tailles. Et enfin les piques sont
+                    simplement une issue bloquée.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see obstacles">
+            <source src="../images/42Run/obstacles.mp4" type="video/mp4">
+        </video>
+        <p>Ajout des obstacles.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Globalement la génération du terrain est terminée. Je vais tout de même retravailler sur les virages
+                    pour que la transition d'une zone à une autre soit plus fluide, et je vais aussi ajouter des
+                    décorations pour cacher le fait que le terrain après un terrain ne soit pas encore généré.<br><br>
+                    Après ça, j'ai retravaillé sur l'intégration du moteur Jolt, car je ne l'avais pas bien réalisé.
+                    J'en ai profité pour ajouter un mode de debug avec le DebugRenderer intégré à Jolt ainsi que ImGUI
+                    pour avoir des informations sur mon joueur.
+                    Cette partie et faite et je vais donc maintenant pouvoir me concentrer sur l'amélioration des
+                    déplacements du joueur.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from 42Run where we can see my debug interface">
+            <source src="../images/42Run/debug_interface.mp4" type="video/mp4">
+        </video>
+        <p>Interface de debug.</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Je ferais des mises à jour de cette page petit à petit où lorsque le jeu sera fini. En attendant, ce
+                    projet reste intéressant car c'est le premier où je touche à du gameplay en 3D avec OpenGL. Il va
+                    aussi me permettre de bien compléter ma librairie, car je compte ajouter la gestion de l'UI ainsi
+                    que des sons.</p>
+                <a id="icons" href="https://github.com/Anthony-Verdon/42Run"><img
+                        src="../images/icons/github-mark-black.png" alt="github logo black version"></a>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br><br>
+    <footer>
+        <br>
+        <h1>Contact</h1>
+        <p>email: averdon@student.42angouleme.fr</p>
         <div class="links">
             <div>
                 <a href="https://github.com/Anthony-Verdon/">
@@ -83,9 +179,9 @@
                 </a>
             </div>
         </div>
-    </div>
-    <br><br>
-</footer>
+        </div>
+        <br><br>
+    </footer>
 
     <link rel="stylesheet" type="text/css" href="../style/index.css" />
     <link rel="stylesheet" type="text/css" href="../style/header.css" />
@@ -95,5 +191,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    </body>
+</body>
+
 </html>
