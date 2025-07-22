@@ -1,7 +1,7 @@
 .paragraph {
     background-color: #dddddd;
     width: 100%;
-    position:relative;
+    position: relative;
 }
 
 .paragraph h1 {
@@ -10,7 +10,7 @@
 }
 
 .paragraph div {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -18,7 +18,7 @@
     padding: 0;
 }
 
-.paragraph div div{
+.paragraph div div {
     display: block;
     text-justify: none;
     text-align: justify;
@@ -26,23 +26,23 @@
     font-family: "Roboto Slab";
 }
 
-.paragraph div div p{
+.paragraph div div p {
     text-justify: none;
     text-align: justify;
     font-family: "Roboto Slab";
 }
 
-.paragraph div div a{
+.paragraph div div #icons {
     display: block;
     text-justify: auto;
     text-align: center;
 }
 
-.paragraph div div img{
+.paragraph div div img {
     width: 5%;
 }
 
-.paragraph a{  
+.paragraph a {
     color: black;
 }
 
@@ -52,11 +52,14 @@
 
 }
 
-.paragraph  div div table, .paragraph  div div th, .paragraph  div div td {
-    border: solid black; 
+.paragraph div div table,
+.paragraph div div th,
+.paragraph div div td {
+    border: solid black;
     border-collapse: collapse;
 }
 
-.paragraph th,.paragraph td {
+.paragraph th,
+.paragraph td {
     padding: 10px;
 }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WIP</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Anthony Verdon - Portfolio</h1>
+        </a>
+    </header>
+    <br><br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Ce projet est un projet à long terme, sur lequel je travaille en continu. Il s'agit d'une librairie
+                    développée en C++ et utilisant OpenGL qui me permet de créer mes autres projets bien plus rapidement
+                    en n'ayant pas à ré-inventer la roue à chaque fois. Elle implémente et intègre différents outils que
+                    je vais détailler ci-dessous.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Le 1er, et le plus important est la gestion de la fenêtre. Pour ça, j'utilise la librairie GLFW que
+                    j'ai intégrée dans une classe "Wrapper", c'est-à-dire une classe qui s'occupe globalement de tout et
+                    rend l'utilisation de la librairie plus simple.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Le 2ème et 3ème outils sont les outils de rendu. Avec ma librairie, je peux afficher des éléments 2D
+                    et 3D. Cela implique la gestion des objets en tant que tel avec OpenGL, avec notamment les shaders,
+                    les VAO, etc … mais aussi les caméras nécessaires pour avoir un bon rendu. Grâce à cela, je peux
+                    afficher des formes géométriques en 2D ou en 3D sans soucis.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Avec ces outils de rendu, je peux ensuite afficher des éléments plus travaillés, comme des sprites 2D
+                    et des modèles 3D. Mais, même si afficher ses éléments est déjà une réussite, pouvoir les animer est
+                    encore mieux !
+                    <br><br>Enfin, et seulement pour la partie 3D, j’ai aussi ajouté la gestion de différents types de
+                    lumières.<br><br>Toute la partie 3D est décrite plus en détail dans le projet <a
+                        href="HumanGL">HumanGL</a>, car c’est en
+                    réalité ce projet lui-même que j’ai intégré par la suite directement à la librairie.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from my project 2d game prototype">
+            <source src="../images/2d_game_prototype/game.mp4" type="video/mp4">
+        </video>
+        <p>images provenant de mon prototype de jeu 2d</p>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <video controls alt="video from HumanGL where we can see an animation">
+            <source src="../images/HumanGL/animation.mp4" type="video/mp4">
+        </video>
+        <p>rendu d'une animation d'un modèle 3D</p>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Une autre chose dont je suis fier dans ma librairie sont les sous-projets hors jeu vidéo que j’ai pu
+                    faire et intégré, comme par exemple mon propre système de matrices et de vecteurs, ou mon parser de
+                    fichier .glb qui inclut lui-même un parser de fichier .json.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <br>
+        <div>
+            <div>
+                <p>Comme je l’ai dis, ce projet est un projet à long terme. Je vais continuer à l’améliorer et à
+                    intégrer de nouvelles choses. <br><br>A l’heure où j’écris ces lignes, je suis en train d’améliorer
+                    l’intégration du moteur physique Jolt au sein de ma librairie. Il faudra ensuite que je reporte ses
+                    améliorations sur l’intégration de Box2D lorsque que je travaillerais sur un projet 2D ( d’ailleurs,
+                    j’hésite à supprimer Box2D sachant que Jolt intègre une partie 2D, mais c’est une question que je
+                    devrais me poser plus tard). <br><br>C’est aussi pourquoi vous pouvez retrouver un prototype de
+                    Tilemap, qui fonctionne mais qui n’est pas satisfaisant selon moi. Mais je re-travaillerais ces
+                    éléments plus tard, car mes priorités pour mon projet actuelle (42Run) seront l’intégration d’une
+                    librairie permettant de jouer des sons, et la gestion d’éléments UI (partie que j’ai déjà commencé
+                    avec la création d’un bouton, mais j’aurais besoin de la compléter).
+                </p>
+                <a id="icons" href="https://github.com/Anthony-Verdon/Engine"><img
+                        src="../images/icons/github-mark-black.png" alt="github logo black version"></a>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="descriptive-picture">
+        <img alt="" src="">
+        <p></p>
+    </div>
+    <br><br>
+    <br><br><br>
+    <footer>
+        <br>
+        <h1>Contact</h1>
+        <div id="informations">
+            <p>email: averdon@student.42angouleme.fr</p>
+            <div id="links">
+                <div>
+                    <a href="https://github.com/Anthony-Verdon/">
+                        <img id="github-logo" src="../images/github-mark-white.png" alt="github logo white version">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anthony-verdon-3867bb286/">
+                        <img id="linkedIn-logo" src="../images/LinkedIn-White.png" alt="linkedIn logo white version">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </footer>
+
+    <link rel="stylesheet" type="text/css" href="../style/index.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../style/paragraph.css" />
+    <link rel="stylesheet" type="text/css" href="../style/array.css" />
+    <link rel="stylesheet" type="text/css" href="../style/descriptive-picture.css" />
+</body>
+
+</html>
